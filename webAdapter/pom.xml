@@ -27,11 +27,6 @@
     <dependencies>
         <dependency>
             <groupId>cat.tecnocampus.tinder</groupId>
-            <artifactId>domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cat.tecnocampus.tinder</groupId>
             <artifactId>application</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>

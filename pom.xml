@@ -14,7 +14,6 @@
         <module>persistenceAdapter</module>
         <module>webAdapter</module>
         <module>configuration</module>
-        <module>persistenceAdapter</module>
     </modules>
 
     <properties>
