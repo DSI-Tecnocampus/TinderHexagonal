@@ -1,13 +1,10 @@
 package cat.tecnocampus.tinder.webAdapter;
 
+import cat.tecnocampus.tinder.application.dto.ProfileDTO;
 import cat.tecnocampus.tinder.application.portIN.AddProfileUseCase;
 import cat.tecnocampus.tinder.application.portIN.NewLikesUseCase;
 import cat.tecnocampus.tinder.application.portIN.ReadUseCases;
-import cat.tecnocampus.tinder.application.service.AddProfileService;
-import cat.tecnocampus.tinder.application.service.NewLikesService;
 import cat.tecnocampus.tinder.webAdapter.frontendException.IncorrectRESTParameter;
-import cat.tecnocampus.tinder.application.service.ReadTinderService;
-import cat.tecnocampus.tinder.application.dto.ProfileDTO;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -23,7 +20,7 @@ public class ProfileRestController {
 	private AddProfileUseCase addProfileUseCase;
 
 
-	public ProfileRestController(ReadTinderService readTinderUseCases, NewLikesService newLikesUseCase, AddProfileService addProfileUseCase) {
+	public ProfileRestController(ReadUseCases readTinderUseCases, NewLikesUseCase newLikesUseCase, AddProfileUseCase addProfileUseCase) {
 		this.readTinderUseCases = readTinderUseCases;
 		this.newLikesUseCases = newLikesUseCase;
 		this.addProfileUseCase = addProfileUseCase;
